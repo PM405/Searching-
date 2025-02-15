@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*-------------------Header-------------------*/
+.header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+
+}
+.header .menu .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 15px;
+    top: 2px;
+    bottom: 5px;
+    transition: 0.5s;
+}
+.header .menu .nav{
+    position: relative;
+    left: -200px;
+    top: 25px;
+    right: 0px;
+    
+}
+.header .menu .nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+    
+
+}
+.header .menu .nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+ .search{
+    float: right;
+    position: relative;
+    left: -200px;
+    right: 15px;
+    top: 20px;
+    bottom: 25px;
+   
+}
+.search input[type="text"]{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+    height: 30px;
+    position: relative;
+    
+}
+.search input{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    right: 10px;
+    bottom: 25px;
+}
+.search label{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    right: 10px;
+    bottom: 25px;
+    font-weight: bold;
+}
+.search button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    right: 10px;
+    bottom: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+}
+.search button:hover{
+    background-color: #5145a0;
+}
+.search button i{
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+
+}
+.header .menu .nav ul li a:hover{
+    color:red;
+    font-size: x-large;
+    background-color:white;
+    box-sizing: border-box 4px 4px 4px content-box;
+    font-weight: bold;
+}
+.search input[type="text"]:hover{
+    background-color:black;
+    color:red;
+}
+.search label:hover{
+    color: #5145a0;
+}
+.header .logo img:hover{
+    transform: rotate(360deg);
+}
+.login{
+    float: right;
+    position: relative;
+    right: -390px;
+    top: 20px;
+    bottom: 25px;
+}
+.login{
+    position: relative;
+    top: 25px;
+    bottom: 25px;
+    
+    
+}
+.login a{
+    text-decoration: none;
+    padding: 7px;
+    padding-bottom: 25px;
+    color: aliceblue;
+    position: relative;
+    right: -55px;
+    bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+}
+.login a img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+}
+/*-------------------end header-------------------*/
+/*-------------------content-------------------*/
+.main{
+    background-color: navajowhite;
+    display:flex;
+    position: fixed;
+    height: 100%;
+    
+}
+.main .card{
+    width: 300px;
+    height: 350px;
+    background-color:#333;
+    position: relative;
+    top: 30px; 
+    justify-content: space-between;
+    left: 10px;
+    box-shadow: 5px 5px 4px red;
+    border-radius: 15px 15px 15px 15px;
+    margin: 42px;
+}
+.main .card img{
+    width: 300px;
+    height: 200px; 
+    border-radius: 17px 20px 5px 5px;
+    border: 2px solid red;
+
+}
+.main .card .in input{
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: medium;
+
+}
+.main .card .in ,p{
+    font-weight: 900;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 3px;
+    font-style: italic;
+}
+.bottom-typing {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Cursor effect */
+    width: 0;
+    animation: typing 3s steps(12) infinite alternate, blink 0.7s infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 150px; } /* Adjust width based on text */
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
